@@ -27,13 +27,13 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           SizedBox(height: 10),
-          NavItem('TOTAL: \$ 1,000.00'),
-          SubItem('Spotify'),
-          SubItem('Google One'),
-          SubItem('ManyChat'),
-          SubItem('DigitalOcean'),
-          SubItem('AWS'),
-          SubItem('Dominio'),
+          NavItem('TOTAL: \$ 479.00'),
+          SubItem('AWS', '01/10/24', '20'),
+          SubItem('DigitalOcean', '01/10/24', '80'),
+          SubItem('Spotify', '03/10/24', '69'),
+          SubItem('ManyChat', '07/10/24', '300'),
+          SubItem('Google One', '23/09/24', '10'),
+          SubItem('Dominio', '14/01/25', '260'),
         ],
       ),
 
@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget SubItem(String title) {
+  Widget SubItem(String title, String fecha, String monto) {
     return Container(
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
@@ -101,11 +101,11 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                '10/10/2021',
+                fecha,
                 style: textStyle,
               ),
               Text(
-                '\$ 100.00',
+                '\$ ${monto}',
                 style: textStyle,
               ),
             ],
