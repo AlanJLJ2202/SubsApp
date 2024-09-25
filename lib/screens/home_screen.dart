@@ -27,12 +27,14 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           SizedBox(height: 10),
-          NavItem('TOTAL: \$ 479.00'),
+          NavItem('TOTAL: \$ 2079.00'),
           SubItem('AWS', '01/10/24', '20'),
           SubItem('DigitalOcean', '01/10/24', '80'),
           SubItem('Spotify', '03/10/24', '69'),
           SubItem('ManyChat', '07/10/24', '300'),
           SubItem('Google One', '23/09/24', '10'),
+          SubItem('Gasolina', '01/10/24', '1000'),
+          SubItem('Pago', '04/10/24', '600'),
           SubItem('Dominio', '14/01/25', '260'),
         ],
       ),
